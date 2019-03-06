@@ -5,7 +5,7 @@ Flask-SQLAlchemy==0.16
 Flask-Testing==0.4.2
 Flask-WTF==0.8.3
 Jinja2==2.6
-SQLAlchemy==0.8.0
+SQLAlchemy==1.0.8
 Tempita==0.5.1
 WTForms==1.0.3
 Werkzeug==0.8.3
@@ -14,3 +14,6 @@ decorator==3.4.0
 ipython==0.13.1
 sqlalchemy-migrate==0.7.2
 wsgiref==0.1.2
+pymysql
+sqlalchemy-utils
+

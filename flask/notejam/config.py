@@ -7,7 +7,7 @@ class Config(object):
     SECRET_KEY = 'notejam-flask-secret-key'
     CSRF_ENABLED = True
     CSRF_SESSION_KEY = 'notejam-flask-secret-key'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'notejam.db')
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://'+ os.environ['DBUSER'] +':' + os.environ['DBPASS'] + '@' + os.environ['DBENDPOINT'] + '/notejamdb?charset=utf8mb4'
 
 
 class ProductionConfig(Config):
